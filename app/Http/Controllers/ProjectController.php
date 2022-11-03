@@ -41,4 +41,13 @@ class ProjectController extends Controller
 
         return redirect('/projects');
     }
+
+
+    public function show(project $project)
+    {
+
+        return view('projects.show', [
+            'project' => $project
+        ]);
+    }
 }

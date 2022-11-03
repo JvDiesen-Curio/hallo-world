@@ -18,3 +18,5 @@ Route::get('/projects', [ProjectController::class, 'index']);
 
 Route::get('/projects/create', [ProjectController::class, 'create']);
 Route::post('/projects/create', [ProjectController::class, 'store']);
+
+Route::get("/project/{project}", [ProjectController::class, 'show']);
